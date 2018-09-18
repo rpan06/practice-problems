@@ -8,3 +8,4 @@ function arrayReverse(arr){
 
 var myArray = ['hello', 45, 'Bob', 'what', '23'];
 arrayReverse(myArray);
+//Output - `['23', 'what', 'Bob', 45, 'hello']`
