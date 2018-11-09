@@ -11,7 +11,7 @@ function biggerWords(str, arr){
     })
     console.log(output)
 }
-biggerWords('whales', myArray)
+// biggerWords('whales', myArray)
 
 
 //02
