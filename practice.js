@@ -109,3 +109,14 @@ translate(myString);
 
 
 //08
+function characterConvert(str){
+    let output = "";
+    str = str.split("")
+    str.map(item=> {output += item.charCodeAt(0)})
+    return output
+  }
+  characterConvert('the cat in the hat');
+  // - "11610410132999711632105110321161041013210497116";
+
+
+  //09
