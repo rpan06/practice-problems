@@ -100,3 +100,12 @@ fibSequence(12);
 
 
 //07
+var myString = "Hello my name is Stu"
+function translate(str){
+  return str.toLowerCase().replace(/(\w)(\w*)/g, '$2$1ay')
+}
+translate(myString);
+//Output - `"ellohay ymay ameya siay tusay"`
+
+
+//08
