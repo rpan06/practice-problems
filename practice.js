@@ -136,10 +136,24 @@ function characterConvert(str){
 
 
   //10
-  Given the following function call:
-- permutations('abc');
+  function permutations(str){
+    let output = [str]
 
-And the resulting output:
-- ["abc", "acb", "bac", "bca", "cab", "cba"];
-
-Create a function definition that achieves the output with the given input.
+    for (let z = 0; z < output.length; z++){
+      for(let i = 0; i < str.length; i++){
+        for(let k = 0; k < str.length; k++){
+          let arr = output[z].split("")
+          let temp = arr[k];
+          arr[k] = arr[i];
+          arr[i] = temp;
+          arr = arr.join("")
+          if(output.indexOf(arr) === -1){
+            output.push(arr)
+          }
+        }
+      }
+    }
+    return output.sort()
+  }
+  permutations('abc');
+  // ["abc", "acb", "bac", "bca", "cab", "cba"];
