@@ -120,3 +120,26 @@ function characterConvert(str){
 
 
   //09
+  var myArray = ['cat','caterpillar','whale','accurate','smile','cactus','cute'];
+  function fittingWords(str, arr){
+    let flag = true;
+    let output = [];
+    let checkArr = str.split("")
+    checkArr.map(letter => {
+      arr = arr.filter(item=>{
+        item.includes(letter)
+      })
+    })
+    return arr
+  }
+  fittingWords('cat', myArray);
+
+
+  //10
+  Given the following function call:
+- permutations('abc');
+
+And the resulting output:
+- ["abc", "acb", "bac", "bca", "cab", "cba"];
+
+Create a function definition that achieves the output with the given input.
