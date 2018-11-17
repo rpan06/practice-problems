@@ -138,7 +138,6 @@ function characterConvert(str){
   //10
   function permutations(str){
     let output = [str]
-
     for (let z = 0; z < output.length; z++){
       for(let i = 0; i < str.length; i++){
         for(let k = 0; k < str.length; k++){
@@ -157,3 +156,22 @@ function characterConvert(str){
   }
   permutations('abc');
   // ["abc", "acb", "bac", "bca", "cab", "cba"];
+
+
+  //11
+  function evenodd(arr){
+    const output = {
+      odd: [],
+      even: []
+    };
+    arr.map(item => {
+      item%2 === 0 ? output.even.push(item) : '';
+      item%2 === 1 ? output.odd.push(item) : '';
+    })
+    return output
+  }
+  evenodd([2,5,1,6,8,2,20,'cat',13,3]);
+  // - Output - {
+  // 	odd: [5, 1, 13, 3],
+  // 	even: [2, 6, 8, 20]
+  // }
