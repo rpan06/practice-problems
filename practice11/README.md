@@ -1,6 +1,6 @@
 ## Even Odds
 
-Build a function that takes one array and then sorts it into odd and even numbers 
+Build a function that takes one array and then sorts it into odd and even numbers
 
 - Write a function that takes one parameter
 	- Parameter 1 - an array of anything
