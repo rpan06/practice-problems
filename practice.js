@@ -205,3 +205,23 @@ function characterConvert(str){
     return output
   }
   math_sequences(2,5);
+
+  
+  //14
+  function arrayFactors(arr){
+    const output = {};
+    arr.map(item=>{
+      output[item] ? '' :
+        output[item] = arr.filter(num => item!==num && item%num===0);
+    })
+    return output
+  }
+  arrayFactors([4,2,8,6,3,9]);
+  // Output - {
+  // 		4: [2],
+  // 		2: [],
+  // 		8: [4,2],
+  // 		6: [2,3],
+  // 		3: [],
+  // 		9: [3]
+  // 	}
