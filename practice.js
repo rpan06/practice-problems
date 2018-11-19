@@ -175,3 +175,33 @@ function characterConvert(str){
   // 	odd: [5, 1, 13, 3],
   // 	even: [2, 6, 8, 20]
   // }
+
+
+  //12
+  function dan_math_sequence(input){
+    var output_array = [];
+    for(var i=input*2; i<input+38; i+=2){
+      if(i>input*10){
+        var o = i / 4;
+      } else {
+        o = i;
+      }
+      output_array.push(o);
+    }
+    return output_array;
+  }
+  console.log(dan_math_sequence(2));
+  console.log(dan_math_sequence(5));
+
+
+  //13
+  function math_sequences(num1,num2){
+    let output = [];
+    const operators = ['+','-','*','/']
+    operators.map(item=>{
+      const str = num1 + item + num2
+      output.push(str + '=' + eval(str))
+    })
+    return output
+  }
+  math_sequences(2,5);
