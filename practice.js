@@ -233,4 +233,17 @@ function characterConvert(str){
 
 
 
-  //15
+  //21
+var inputArray = [5,3,2,5,1];
+
+function shuffle(arr){
+  const output = [];
+  while (arr.length !== 0){
+    const randomI = Math.floor(Math.random() * arr.length)
+    output.push(arr[randomI])
+    arr.splice(randomI,1)
+  }
+  return output;
+}
+
+shuffle(inputArray);
