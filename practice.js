@@ -206,13 +206,18 @@ function characterConvert(str){
   }
   math_sequences(2,5);
 
-  
+
   //14
   function arrayFactors(arr){
+    const uniqueNum = []
+    arr.map(num=>{
+      if(uniqueNum.indexOf(num) === -1){
+        uniqueNum.push(num)
+      }
+    })
     const output = {};
-    arr.map(item=>{
-      output[item] ? '' :
-        output[item] = arr.filter(num => item!==num && item%num===0);
+    uniqueNum.map(item=>{
+        output[item] = uniqueNum.filter(num => item!==num && item%num===0);
     })
     return output
   }
@@ -225,3 +230,7 @@ function characterConvert(str){
   // 		3: [],
   // 		9: [3]
   // 	}
+
+
+
+  //15
